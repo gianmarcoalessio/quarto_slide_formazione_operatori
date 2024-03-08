@@ -1,0 +1,302 @@
+---
+title: "Formazione Operatori"
+author: "gianmarcoalessio@appdelmobile.com"
+slide-number: True
+transition: slide
+format:
+  revealjs: 
+    theme: [dark, custom.scss]
+    toc: True
+    footer: "APPDELMOBILE"
+    logo: logo.png
+---
+
+
+# Commerciale
+
+## Pacchetti
+
+- Pacchetto formazione 5 ore^[Dal primo incontro l'assistenza deve essere fatta entro 2 mesi. Si consiglia dopo il primo incontro fissare almeno i prossimi 5 incontri entro il mese corrente.] costa **279€**^[Si può pagare la differenza per passare ad un pacchetto più alto, ma non più basso] + gratuito appdelmobile per 6 mesi
+- Pacchetto formazione 10 ore costa **549€** + gratuito appdelmobile per 6 mesi
+- Pacchetto formazione 15 ore costa **799€** + gratuito appdelmobile per 6 mesi
+- Pacchetto formazione/assistenza extra: 1 ora costa 65€
+  - Si considerano:  
+    - Formazione di un operatore ad usare appdelmobile
+    - Importazione di listini
+    - Importazione massiva di dati
+    - Implementazioni di funzioni personalizzate
+  - Si escludono: 
+    - Assistenza per malfunzionamenti
+    - Assistenza per perdita di dati o informazioni
+    - Implementazioni di funzioni che migliorano l'applicazione a descrizione dell'operatore
+
+## Sottoscrizioni
+
+Le sottoscrizioni dopo i 6 mesi si applicano in base alle esigenze del negozio:
+
+- Good
+  - **119€**/mese, 100€/mese unica soluzione annua
+  - 25€/operatore/mese, 21€/operatore/mese unica soluzione annua
+- Better
+  - **189€**/mese, 160€/mese unica soluzione annua
+  - 30€/operatore/mese, 25€/operatore/mese unica soluzione annua
+- Best
+  - **289€**/mese, 245€/mese unica soluzione annua
+  - 55€/operatore/mese, 46€/operatore/mese unica soluzione annua
+
+## Funzionalità disponibili
+
+:::: {.columns}
+
+::: {.column width="33%"}
+**Good 119-25**
+
+- Anagrafiche clienti, fornitori (Good)
+- Gestione listini e condizioni (Good)
+- Gestione preventivi e vendite (Good)
+- Importazione file cad (Good)
+- Fatturazione (Good)
+- Ordine ai fornitori (Good)
+:::
+
+::: {.column width="33%"}
+**Better 189-30**
+
+- Reception (Better)
+- Gestione Workflow (Better)
+- Statistiche (Better)
+- Collegamenti CAD (Better)
+- Gestione Autoizzazioni (Better)
+
+:::
+
+::: {.column width="33%"}
+**Best 289-55**
+
+- Server dedicato (Best)
+- Gestione magazzino e mostre (Best)
+- Squadra di montaggio (Best)
+- Portale B2C (Best)
+- Assistenza Premium^[consiste in una gestione di priorità nella lista di attesa per le assistenze, come il telepass] (Best)
+
+:::
+
+::::
+ 
+
+# Formazione
+
+## Collaudo Sito
+Costruzione e collaudo del sito per il cliente:
+
+- Aggiungere il sito ad una Macchina e.g. adm01 (locale a Trieste): 2CPUs, 2Gb di RAM e 20 Gb di memoria statica aggiungibile. Questa impostazione è ottimale, per portare avanti 10 clienti però è sempre in base alla grandezza del cliente.
+- La Macchina di copia^[È identica e aggiornata una volta al giorno]
+- Sito: nome_negozio.appdelmobile.com
+- Username: nome_del_cliente 
+- Password: pass^[Modificabile in base alle necessita]
+- Impostare le abilitazioni^[Su negozio.json] con i moduli: good, better e best
+
+## Formazione
+
+Formazione degli operatori per eseguire in modo autonomo i principali workflow: 
+
+- Creazione di un preventivo, 
+- Creazione di un'anagrafiche cliente, 
+- Creazione di un'anagrafiche fornitore, 
+- Creazione di un listino (3CAD, NEXT, per importazione o manuale), 
+- Creazione articoli,
+- Scelta delle condizioni di acquisto (vendita, approviggionamento), 
+- Creazione dei ruoli, 
+- Attivazione abilitazioni, 
+- Carico magazzino, 
+- Creazione mappe^[Se una tantum, gestibile come servizio personalizzato]
+
+## Prime 5 ore
+
+Dopo 5 ore dovranno essere ingrado di^[Per ogni preventivo andato a buon fine, cancellarlo e farglielo fare da capo all'operatore del cliente]:
+
+- Entrare ed uscire da appdelmobile^[Documentazione da creare, sia video che trammite blog/testo].
+- Aggiungere e togliere le anagrafiche degli utenti
+- Aggiungere e togliere i preventivi legati agli utenti
+- Aggiungere e togliere i fornitori legati ai preventivi
+- Aggiungere e togliere i listini legati ai fornitori
+- Stampare e gestire il preventivo 
+- Passare da preventivo a vendita
+- Creare la fattura elettronica
+- Applicazione filtro "Tipo Causale di Vendita" su tutti i preventivi generati
+
+
+## Prime 10 ore
+
+- Applicazione filtro "Tipo Calcolo" su tutti i preventivi generati
+- Applicazione filtro "Tipo Cliente" su tutti i preventivi generati
+- Creare le condizioni di vendità per tutti i fornitori generati
+- Creare le condizioni di acquisto per tutti i fornitori generati
+- Creare le condizioni di approviggionamento per tutti i fornitori generati 
+- Definire le impostazioni di default^[Dentro "Amministrazione di Sistema"]
+
+Inserire 10 clienti del clienti (clc) con almeno un preventivo attivo. Inserirli manualmente dalla loro gestione precedente che potrebbe essere da EASY STORE o da cartaceo o da precedente gestionale.
+
+Se tra i 10 clc non si riesce ad arrivare ad un preventivo stampato, farsi lasciare tutte le informazioni relative del clc, fornitore, listini del fornitore e preventivo^[Questo per poterlo risolvere autonomamente prima del prossimo incontro e riflettere su come ottimizzare i filtri e le condizioni.].
+
+## +5 ore gestione più operatori^[Se necessario l'operatore nostro deve coinvolgere tutti gli operatori che dovranno poi usare il gestionale durante le lezioni di formazione]
+
+- Cancellazione e creazione di un nuovo operatore^[Da "Gestione utenti" come amministratore] di livello 3^[Convenzione livello operatori: 9 amministratore, 8 utente demo, 3 operatore standard, 2 operatori secondari esterni al clienti, 1 il clc ].
+- Entrare ed uscire da appdelmobile con il nuovo operatore.
+- Definizione dei "Ruoli^[e.g. venditore, responsabile degli acquisti, receptionist, magazziniere, amministrativi, dirigente di negozio]" con il cliente^[Facendo riferimento ad una tabella resa disponibile sulle "abilitazioni di primo livello".]. 
+- Assegnamento delle abilitazioni di primo livello^[Abilitazioni relative all'accesso di pagine legate al menu, quelle di secondo livello sono più delicate e.g. oscurare il prezzo d'acquisto per un determinato prodotto]
+- Valutazione^[Mettere la richiesta del cliente sul report] delle abilitazioni di secondo livello
+- Carico/Scarico Magazzino
+
+# [Caso Studio: Casapercasa](https://appdelmobile.com){preview-link="true"}
+
+
+## Caso Studio: Casapercasa
+
+Operatore di casapercasa: Mirko 
+
+Operatore di appdelmobile: Agustin 
+
+### Prima ora^[In via telematica su discord] (Giovedì 18/01/2024): 
+
+- Agustin: 20 minuti di spiegazione sulla struttura del software
+- Agustin: 25 minuti workflow con dati reali:
+  - creazione di un preventivo
+  - creazione di un listino 
+  - creazione di un'anagrafiche cliente
+  - creazione di un'anagrafiche fornitore 
+- Mirko: 15 minuti workflow con nuovi dati reali: 
+  - creazione di un preventivo
+  - creazione di un listino
+  - creazione di un'anagrafiche cliente, 
+  - creazione di un'anagrafiche fornitore
+
+
+## Seconda ora^[In via telematica su discord] (Mercoledì 24/01/2024):
+
+- Note:
+  - Osservazione: campo email obbligatoria
+  - Osservazione: differenza tra articolo personalizzabile (varia per ogni preventivo) e mono-prodotto (inserimento diretto sul preventivo)
+  - Osservazione: codice listino identifica il listino, conviene usare gli stessi del fornitore
+  - Errore: modificare pop-up da rosso a verde del codice fiscale.
+  - Osservazione: l'assegnamento del prezzo negli articoli si confonde con "pezzo" cercare un'alternativa.
+  - Miglioramento: mettere freccia back dal preventivo per tornare nella lista preventivi.
+  - Miglioramento: nella sezione listino, mettere il tab degli articoli sotto il menu di configurazione.
+  - Errore: nell'articolo l'immagine scompare nel momento in cui viene salvato l'articolo
+  - Osservazione: nella stampa del preventivo di default sarebbe meglio mostrare le "viste" attive degli articoli e listini, poi l'operatore decide cosa non mostrare.
+  - Errore: nella stampa riceviamo un errore di messaggio quando proviamo ad attivare la "vista" per le condizioni alla fine. 
+
+## Continua
+
+- Agustin: 5 minuti di presentazione nella creazione del preventivo
+- Mirko: 40 minuti di lavoro sull'inserimento di un articolo personalizzabile relativo ad un listino 
+- Mirko: 15 minuti creazione del preventivo con l'articolo appena creato
+- Agustin: utilizzo e personalizzazione del servizio relativo al preventivo. 
+
+
+## Terza - Sesta ora^[In presenza casapercasa] (20/02/2024, 9:30 am - 12:30 am):
+
+- Creazione rapporto con il cliente casapercasa (ascolto dei problemi del giorno)
+- Visualizzazione della gestione interna di casapercasa:
+  - Gestione dei clienti (con Monday)
+  - Gestione della stamapa dei preventivi (con Easystore + Photoshop)
+- Spiegazione del funzionamento delle tipi (tipi calcolo, tipo causale, tipo cliente, tipo articolo) e delle condizioni di vendita, acquisto e approvigionamento
+
+**pausa di 10 minuti**
+
+- tra i problemi del giorno Yvan (socio di casapercasa) la creazione di un preventivo per un cliente nuovo.
+- Creazione del cliente Y IMMOBILIERS SA, creazione dei fornitori (Vermobil,Pedrali, Essepigroup, Bravate Artigiane), sono stati utilizzati dei listini BASE manuali per la gestione ad hoc degli articoli e le condizioni sono state trattate manualmente avendo inserito nuovi fornitori.
+- Quindi i prezzi sono stati gestiti in modo tale che siano compatibili con l'aspettativa di Yvan
+- Stampa del preventivo
+
+
+## Settima ora^[In via telematica su discord] (23/01/2024):
+
+- Trattamento dello stampa 
+- Gestione delle condizioni 
+- Gestione dei ruoli e delle abilitazioni 
+
+## Ottava ora^[In via telematica su discord] (01/03/2024):
+
+- Creazione della mappa
+
+## Nona - Decima ora^[In via telematica su discord] (08/03/2024):
+
+- Ripasso creazione delle mappe 
+- Mirko: dove vengono salvate le vendite archiviate? 
+- Agustin: in questo momento sono sul database, ma non sono disponibili all'utente. 
+- Mirko: coinvolegerà gli altri operatori per iniziare ad inserire altre vendite.
+
+
+
+
+
+<!-- 
+## Note
+
+- 20 ore di formazione su appdelmobile, con la scusa di un impegno per il breve termine per lo spostamento dei dati da easy store ad appdelmobile + formazione del personale.
+- Pacchetto da 20 ore più utilizzo per 6 mesi di appdelmobile garantito, con assistenza. 
+- pacchetto gold 20 ore di formazione a 800€ + appdelmobile per 6 mesi, scandite in 14 giorni. 
+- pacchetto silver da 10 ore a 500€ + appdelmobile per 3 mesi, scandite in 10 giorni.
+- pacchetto bronze da 5 ore a 350€ + appdelmobile per 1 mese, scandite in 7 giorni. 
+- appdelmobile senza assistenza
+
+
+## 
+
+- Operatori pagati 30€ all'ora  
+- Obbligatorio stilare il report dell'ora fatta, il report sarà fatto come un articolo, che verrà successivamente aggiustato con le risposte a tutte le problematiche affrontate e creato un video tutorial che verrà aggiunto su appdelmobile. (creazione di contenuti per la documentazione direttamente sul campo)
+- Operatori in collegamento diretto con un cliente il quael dovrà mettere a disposizione una persona da formare su appdelmobile. 
+- Operatori dovranno nella prima aggiungere 20 clienti attivi (con almeno un preventivo) del negozio, 10 fornitori con 2 listini per fornitori, e generare tutti i relativi preventivi dei 20 clienti facendo riferimento all listino. Quindi per essere sicuro di avere i listini e quindi i fornitori giusti si dovrà inserire per primo i clienti con i preventivi attivi, poi vedere il preventivo che articoli sono stati scelti, scegliere quidni il listino corrispondente e quindi il fornitore corrispondente. Segnare nella documentazione tutti questi riferiementi in modo tale da segnalare più facilmente la problematica. Fare tutto questo con la persona scelta dal cliente per seguire l'operatore. Questo servizio si farà nelle prime 5 ore , e sarà il get started (pacchetto bronzo), dove la persona del cliente detterà le informazioni che verranno inserite manualmente dall'operatore.
+
+##
+
+- Nelle 5 ore successive ci sarà il hands on (pacchetto silver), la persona del cliente dovrà iniziare ad usare in un giorno concordato con l'operatore appdelmobile e a fine della giornata (o in un orario concordato), potrà confrontrasi con l'operatore su tutti i problemi che ha incontrato, eventuali vicoli ciechi. Per almeno 5 incontri.
+- Nelle 10 ore successive ci sarà il collaboration. Nel pacchetto Gold, si formeranno direttamente 3 persone diverse: il commerciale, la segretaria e l'amministratore. Le prime 10 ore saranno uguali per tutti per l'inserimento dati, ma poi si seguiranno separatamente per 2 ore la segretaria, 2 ore il commerciale, 3 ore l'amministratore e 1 ora finale per un resoconto. 
+- Poi se c'è bisogno di ancora assistenza si può aggiungere 5, 10 e 20 ore per compiti relativi a:
+  - get started
+  - hands on 
+  - collaboration
+
+##
+- Un operatore viene pagato 30€/ora, per un'assistenza si ha 60€ per 2 ore (1 ora la call, e 1 ora fare il report). 
+- Quindi il margine rispetto ai pacchetti è:
+  - 800€ gold - 1200€ (60 * 20) = -400€
+  - 500€ silver - 600€ (60 * 10) = -100€
+  - 350€ bronze - 300€ (60 * 5) = 50€
+
+##
+- Un operatore viene pagato 20€/ora, per un'assistenza si ha 30€ per 1 ora e mezza (1 ora la call, e 30 minuti mini-report).
+- Quindi il margine rispetto ai pacchetti è:
+  - 800€ gold - 600€ (30*20) = 200€ 
+  - 500€ silver - 300€ (30 * 10) = 200€
+  - 350€ bronze - 150€ (30 * 5) = 200€
+
+## 
+- Un operatore viene pagato 20€/ora, per un'assistenza si ha 30€ per 1 ora e mezza (1 ora la call, e 30 minuti mini-report).
+- Però i pacchetti costeranno quanto vale l'abbonamento di appdelmobile ma in advance per 6 mesi, 3 mesi e 1 mese. Così abbiamo il pagamento anticipato e possiamo gestire gli operatori. 
+
+## 
+Contratto a prestazione
+- Valentina Rondinella (DAU)
+- Agustin Campagnolo (appdelmobile)
+- Benjamin (appdelmobile)
+- Gianmarco Alessio (appdelmobile)
+- Andrea Napolitano (appdelmobile)
+- Nabila (appdelmbile)
+- Agnese Pozzobon (appdelmobile)
+
+##
+- Gianmarco Alessio
+- Valentina Rondinella
+
+Da parte di una telefonata con Yvan:
+
+- (Analisi dati) Margine operativo lordo: ricavi dedotti i costi diviso i ricavi (coefficienti)
+- (Magazzino): Gestione del magazzino, cucina da un fornitore la mette dentro ddt il magazzino. Carica del magazzino, e sapere che ho la merce disponibile. La merce che viene consegnata. Collegare l'ordine con il carico della cucina.  
+
+Es: cucina della Mittel (ddt), riferimento dell'ordine è il codice del cliente 4 lettere (iniziali del nome) e 4 numeri per il progressivo. Ordine del cliente si trova sia sul cliente che sulla lista ordini del fornitore. Quando arriva la conferma d'ordine non hai caricato la conferma ordine. Quando era il momento di associare il ddt non poteva farlo. 
+
+
+
+ -->

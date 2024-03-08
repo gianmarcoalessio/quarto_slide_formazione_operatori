@@ -1,0 +1,4 @@
+- source: assistenza.qmd
+  quarto-pub:
+    - id: 5f1fad77-79fd-4c26-a6e8-70082e73c9ce
+      url: 'https://giemsei.quarto.pub/gestione-assistenza'
